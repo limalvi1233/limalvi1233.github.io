@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HC Verma Physics - Progress</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">HC Verma - Concepts of Physics</div>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon moon-icon">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon sun-icon" style="display: none;">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="volume1.html">Volume 1</a></li>
+                    <li><a href="volume2.html">Volume 2</a></li>
+                    <li><a href="bookmarks.html">Bookmarks</a></li>
+                    <li><a href="progress.html">Progress</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="m9 18 6-6-6-6"/>
+            </svg>
+            <span>Progress</span>
+        </div>
+        
+        <section class="progress-header">
+            <h1>Your Progress</h1>
+            <p>Track your learning journey through HC Verma's Concepts of Physics</p>
+        </section>
+        
+        <section class="progress-overview">
+            <h2>Overall Progress</h2>
+            <div class="progress-bar">
+                <div class="progress-value" id="overall-progress" style="width: 0%"></div>
+            </div>
+            <p id="overall-progress-text">0% complete</p>
+        </section>
+        
+        <section class="progress-volumes">
+            <div class="progress-volume">
+                <h2>Volume 1</h2>
+                <div class="progress-bar">
+                    <div class="progress-value" id="volume1-progress" style="width: 0%"></div>
+                </div>
+                <p id="volume1-progress-text">0% complete</p>
+                
+                <div class="progress-chapters" id="volume1-chapters">
+                    <h3>Chapters</h3>
+                    <div id="volume1-chapters-list">
+                        <!-- Chapter progress will be inserted here -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="progress-volume">
+                <h2>Volume 2</h2>
+                <div class="progress-bar">
+                    <div class="progress-value" id="volume2-progress" style="width: 0%"></div>
+                </div>
+                <p id="volume2-progress-text">0% complete</p>
+                
+                <div class="progress-chapters" id="volume2-chapters">
+                    <h3>Chapters</h3>
+                    <div id="volume2-chapters-list">
+                        <!-- Chapter progress will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>HC Verma - Concepts of Physics</p>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/js/theme.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get progress data from localStorage
+            const progress = JSON.parse(localStorage.getItem('hcv-progress') || '{}');
+            
+            // Volume 1 chapters
+            const volume1Chapters = [
+                { id: 1, title: 'Introduction to Physics' },
+                { id: 2, title: 'Physics and Mathematics' },
+                { id: 3, title: 'Rest and Motion: Kinematics' },
+                { id: 4, title: 'The Forces' },
+                { id: 5, title: "Newton's Laws of Motion" },
+                { id: 6, title: 'Friction' },
+                { id: 7, title: 'Circular Motion' },
+                { id: 8, title: 'Work and Energy' },
+                { id: 9, title: 'Centre of Mass, Linear Momentum, Collision' },
+                { id: 10, title: 'Rotational Mechanics' }
+            ];
+            
+            // Volume 2 chapters
+            const volume2Chapters = [
+                { id: 21, title: 'Heat and Temperature' },
+                { id: 22, title: 'Kinetic Theory of Gases' },
+                { id: 23, title: 'Calorimetry' },
+                { id: 24, title: 'Laws of Thermodynamics' },
+                { id: 25, title: 'Specific Heat Capacities of Gases' },
+                { id: 26, title: 'Heat Transfer' },
+                { id: 27, title: 'Electric Field and Potential' },
+                { id: 28, title: "Gauss's Law" },
+                { id: 29, title: 'Capacitors' },
+                { id: 30, title: 'Electric Current in Conductors' }
+            ];
+            
+            // Calculate and display progress
+            function calculateProgress() {
+                // Volume 1 progress
+                let volume1Total = 0;
+                const volume1ChaptersList = document.getElementById('volume1-chapters-list');
+                volume1ChaptersList.innerHTML = '';
+                
+                volume1Chapters.forEach(chapter => {
+                    const chapterId = `1-${chapter.id}`;
+                    const chapterProgress = progress[chapterId] || { theory: 0, practice: 0 };
+                    const chapterTotal = (chapterProgress.theory + chapterProgress.practice) / 2;
+                    volume1Total += chapterTotal;
+                    
+                    // Create chapter progress element
+                    const chapterElement = document.createElement('div');
+                    chapterElement.className = 'progress-chapter';
+                    chapterElement.innerHTML = `
+                        <div class="progress-chapter-header">
+                            <span>Chapter ${chapter.id}: ${chapter.title}</span>
+                            <span>${Math.round(chapterTotal * 100)}%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-value" style="width: ${chapterTotal * 100}%"></div>
+                        </div>
+                    `;
+                    volume1ChaptersList.appendChild(chapterElement);
+                });
+                
+                const volume1Progress = volume1Chapters.length > 0 ? volume1Total / volume1Chapters.length : 0;
+                document.getElementById('volume1-progress').style.width = `${volume1Progress * 100}%`;
+                document.getElementById('volume1-progress-text').textContent = `${Math.round(volume1Progress * 100)}% complete`;
+                
+                // Volume 2 progress
+                let volume2Total = 0;
+                const volume2ChaptersList = document.getElementById('volume2-chapters-list');
+                volume2ChaptersList.innerHTML = '';
+                
+                volume2Chapters.forEach(chapter => {
+                    const chapterId = `2-${chapter.id}`;
+                    const chapterProgress = progress[chapterId] || { theory: 0, practice: 0 };
+                    const chapterTotal = (chapterProgress.theory + chapterProgress.practice) / 2;
+                    volume2Total += chapterTotal;
+                    
+                    // Create chapter progress element
+                    const chapterElement = document.createElement('div');
+                    chapterElement.className = 'progress-chapter';
+                    chapterElement.innerHTML = `
+                        <div class="progress-chapter-header">
+                            <span>Chapter ${chapter.id}: ${chapter.title}</span>
+                            <span>${Math.round(chapterTotal * 100)}%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-value" style="width: ${chapterTotal * 100}%"></div>
+                        </div>
+                    `;
+                    volume2ChaptersList.appendChild(chapterElement);
+                });
+                
+                const volume2Progress = volume2Chapters.length > 0 ? volume2Total / volume2Chapters.length : 0;
+                document.getElementById('volume2-progress').style.width = `${volume2Progress * 100}%`;
+                document.getElementById('volume2-progress-text').textContent = `${Math.round(volume2Progress * 100)}% complete`;
+                
+                // Overall progress
+                const overallProgress = (volume1Progress + volume2Progress) / 2;
+                document.getElementById('overall-progress').style.width = `${overallProgress * 100}%`;
+                document.getElementById('overall-progress-text').textContent = `${Math.round(overallProgress * 100)}% complete`;
+            }
+            
+            calculateProgress();
+        });
+    </script>
+</body>
+</html>

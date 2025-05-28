@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HC Verma Physics - Practice Chapter 21</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">HC Verma - Concepts of Physics</div>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon moon-icon">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon sun-icon" style="display: none;">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="volume1.html">Volume 1</a></li>
+                    <li><a href="volume2.html">Volume 2</a></li>
+                    <li><a href="bookmarks.html">Bookmarks</a></li>
+                    <li><a href="progress.html">Progress</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="m9 18 6-6-6-6"/>
+            </svg>
+            <a href="volume2.html">Volume 2</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="m9 18 6-6-6-6"/>
+            </svg>
+            <a href="chapter21.html">Chapter 21</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="m9 18 6-6-6-6"/>
+            </svg>
+            <span>Practice</span>
+        </div>
+        
+        <div class="practice-container">
+            <section class="practice-header">
+                <h1>Chapter 21: Heat and Temperature</h1>
+                <p>Practice Questions</p>
+            </section>
+            
+            <section class="practice-controls">
+                <button id="prev-question" class="btn" disabled>Previous</button>
+                <span id="question-counter">Question 1 of 5</span>
+                <button id="next-question" class="btn">Next</button>
+            </section>
+            
+            <section class="practice-questions">
+                <div class="practice-question" data-question="1">
+                    <h2>Question 1</h2>
+                    <p>A metal rod has a length of 1.0 m at 20°C. If its coefficient of linear expansion is 1.1 × 10⁻⁵ /°C, what will be its length at 100°C?</p>
+                    <ol type="a">
+                        <li>1.0088 m</li>
+                        <li>1.0088 cm</li>
+                        <li>1.088 m</li>
+                        <li>1.0 m</li>
+                    </ol>
+                    
+                    <button class="practice-answer-toggle">Show Answer</button>
+                    
+                    <div class="practice-answer" style="display: none;">
+                        <h3>Answer</h3>
+                        <p>a. 1.0088 m</p>
+                        <p>Explanation: Using the formula for linear expansion: ΔL = α × L₀ × ΔT</p>
+                        <p>ΔL = (1.1 × 10⁻⁵ /°C) × (1.0 m) × (100°C - 20°C)</p>
+                        <p>ΔL = (1.1 × 10⁻⁵ /°C) × (1.0 m) × (80°C)</p>
+                        <p>ΔL = 8.8 × 10⁻⁴ m</p>
+                        <p>New length = L₀ + ΔL = 1.0 m + 8.8 × 10⁻⁴ m = 1.00088 m ≈ 1.0088 m</p>
+                    </div>
+                    
+                    <button class="bookmark-question" data-question="1" data-title="Question 1: Thermal Expansion">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                        </svg>
+                        <span>Bookmark</span>
+                    </button>
+                </div>
+                
+                <div class="practice-question" data-question="2" style="display: none;">
+                    <h2>Question 2</h2>
+                    <p>Convert 98.6°F to Celsius and Kelvin.</p>
+                    <ol type="a">
+                        <li>36.7°C, 309.9 K</li>
+                        <li>37.0°C, 310.2 K</li>
+                        <li>37.0°C, 273.2 K</li>
+                        <li>36.7°C, 273.2 K</li>
+                    </ol>
+                    
+                    <button class="practice-answer-toggle">Show Answer</button>
+                    
+                    <div class="practice-answer" style="display: none;">
+                        <h3>Answer</h3>
+                        <p>b. 37.0°C, 310.2 K</p>
+                        <p>Explanation: To convert from Fahrenheit to Celsius: °C = (°F - 32) × 5/9</p>
+                        <p>°C = (98.6 - 32) × 5/9 = 66.6 × 5/9 = 37.0°C</p>
+                        <p>To convert from Celsius to Kelvin: K = °C + 273.15</p>
+                        <p>K = 37.0 + 273.15 = 310.15 K ≈ 310.2 K</p>
+                    </div>
+                    
+                    <button class="bookmark-question" data-question="2" data-title="Question 2: Temperature Conversion">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                        </svg>
+                        <span>Bookmark</span>
+                    </button>
+                </div>
+                
+                <div class="practice-question" data-question="3" style="display: none;">
+                    <h2>Question 3</h2>
+                    <p>How much heat energy is required to raise the temperature of 500 g of water from 20°C to 80°C? (Specific heat capacity of water = 4,186 J/(kg·K))</p>
+                    <ol type="a">
+                        <li>125,580 J</li>
+                        <li>83,720 J</li>
+                        <li>41,860 J</li>
+                        <li>209,300 J</li>
+                    </ol>
+                    
+                    <button class="practice-answer-toggle">Show Answer</button>
+                    
+                    <div class="practice-answer" style="display: none;">
+                        <h3>Answer</h3>
+                        <p>a. 125,580 J</p>
+                        <p>Explanation: Using the formula: Q = m × c × ΔT</p>
+                        <p>Q = (0.5 kg) × (4,186 J/(kg·K)) × (80°C - 20°C)</p>
+                        <p>Q = (0.5 kg) × (4,186 J/(kg·K)) × (60°C)</p>
+                        <p>Q = 125,580 J</p>
+                    </div>
+                    
+                    <button class="bookmark-question" data-question="3" data-title="Question 3: Heat Energy Calculation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                        </svg>
+                        <span>Bookmark</span>
+                    </button>
+                </div>
+                
+                <div class="practice-question" data-question="4" style="display: none;">
+                    <h2>Question 4</h2>
+                    <p>How much heat is required to convert 200 g of ice at 0°C to water at 0°C? (Latent heat of fusion of ice = 334 kJ/kg)</p>
+                    <ol type="a">
+                        <li>33.4 kJ</li>
+                        <li>66.8 kJ</li>
+                        <li>3.34 kJ</li>
+                        <li>6.68 kJ</li>
+                    </ol>
+                    
+                    <button class="practice-answer-toggle">Show Answer</button>
+                    
+                    <div class="practice-answer" style="display: none;">
+                        <h3>Answer</h3>
+                        <p>a. 66.8 kJ</p>
+                        <p>Explanation: Using the formula: Q = m × L<sub>f</sub></p>
+                        <p>Q = (0.2 kg) × (334 kJ/kg)</p>
+                        <p>Q = 66.8 kJ</p>
+                    </div>
+                    
+                    <button class="bookmark-question" data-question="4" data-title="Question 4: Latent Heat">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                        </svg>
+                        <span>Bookmark</span>
+                    </button>
+                </div>
+                
+                <div class="practice-question" data-question="5" style="display: none;">
+                    <h2>Question 5</h2>
+                    <p>A copper cube with side length 10 cm at 20°C is heated to 100°C. What is the approximate increase in its volume? (Coefficient of volume expansion of copper = 5.1 × 10⁻⁵ /°C)</p>
+                    <ol type="a">
+                        <li>4.08 cm³</li>
+                        <li>40.8 cm³</li>
+                        <li>0.408 cm³</li>
+                        <li>408 cm³</li>
+                    </ol>
+                    
+                    <button class="practice-answer-toggle">Show Answer</button>
+                    
+                    <div class="practice-answer" style="display: none;">
+                        <h3>Answer</h3>
+                        <p>b. 40.8 cm³</p>
+                        <p>Explanation: First, calculate the initial volume of the cube:</p>
+                        <p>V₀ = (10 cm)³ = 1,000 cm³</p>
+                        <p>Using the formula for volume expansion: ΔV = β × V₀ × ΔT</p>
+                        <p>ΔV = (5.1 × 10⁻⁵ /°C) × (1,000 cm³) × (100°C - 20°C)</p>
+                        <p>ΔV = (5.1 × 10⁻⁵ /°C) × (1,000 cm³) × (80°C)</p>
+                        <p>ΔV = 40.8 cm³</p>
+                    </div>
+                    
+                    <button class="bookmark-question" data-question="5" data-title="Question 5: Volume Expansion">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                        </svg>
+                        <span>Bookmark</span>
+                    </button>
+                </div>
+            </section>
+            
+            <section class="practice-progress">
+                <h2>Your Progress</h2>
+                <div class="progress-bar">
+                    <div class="progress-value" id="practice-progress" style="width: 0%"></div>
+                </div>
+                <p id="practice-progress-text">0% complete</p>
+                <button id="mark-complete" class="btn" style="margin-top: 1rem;">Mark Chapter as Complete</button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>HC Verma - Concepts of Physics</p>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/js/theme.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Question navigation
+            const prevButton = document.getElementById('prev-question');
+            const nextButton = document.getElementById('next-question');
+            const questionCounter = document.getElementById('question-counter');
+            const questions = document.querySelectorAll('.practice-question');
+            
+            let currentQuestion = 1;
+            const totalQuestions = questions.length;
+            
+            function updateQuestionDisplay() {
+                // Hide all questions
+                questions.forEach(q => q.style.display = 'none');
+                
+                // Show current question
+                document.querySelector(`.practice-question[data-question="${currentQuestion}"]`).style.display = 'block';
+                
+                // Update counter
+                questionCounter.textContent = `Question ${currentQuestion} of ${totalQuestions}`;
+                
+                // Update button states
+                prevButton.disabled = currentQuestion === 1;
+                nextButton.disabled = currentQuestion === totalQuestions;
+            }
+            
+            prevButton.addEventListener('click', function() {
+                if (currentQuestion > 1) {
+                    currentQuestion--;
+                    updateQuestionDisplay();
+                }
+            });
+            
+            nextButton.addEventListener('click', function() {
+                if (currentQuestion < totalQuestions) {
+                    currentQuestion++;
+                    updateQuestionDisplay();
+                }
+            });
+            
+            // Show/hide answers
+            const answerToggleButtons = document.querySelectorAll('.practice-answer-toggle');
+            
+            answerToggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    
+                    if (answer.style.display === 'none') {
+                        answer.style.display = 'block';
+                        this.textContent = 'Hide Answer';
+                    } else {
+                        answer.style.display = 'none';
+                        this.textContent = 'Show Answer';
+                    }
+                });
+            });
+            
+            // Bookmark functionality
+            const bookmarkButtons = document.querySelectorAll('.bookmark-question');
+            
+            bookmarkButtons.forEach(button => {
+                const questionNum = button.dataset.question;
+                const title = button.dataset.title;
+                const bookmarkId = `question-2-21-${questionNum}`;
+                
+                // Check if already bookmarked
+                const bookmarks = JSON.parse(localStorage.getItem('hcv-bookmarks') || '[]');
+                const isBookmarked = bookmarks.some(bookmark => bookmark.id === bookmarkId);
+                
+                if (isBookmarked) {
+                    button.querySelector('svg').setAttribute('fill', 'currentColor');
+                    button.querySelector('span').textContent = 'Bookmarked';
+                }
+                
+                button.addEventListener('click', function() {
+                    const bookmarks = JSON.parse(localStorage.getItem('hcv-bookmarks') || '[]');
+                    const existingIndex = bookmarks.findIndex(bookmark => bookmark.id === bookmarkId);
+                    
+                    if (existingIndex >= 0) {
+                        // Remove bookmark
+                        bookmarks.splice(existingIndex, 1);
+                        this.querySelector('svg').setAttribute('fill', 'none');
+                        this.querySelector('span').textContent = 'Bookmark';
+                    } else {
+                        // Add bookmark
+                        bookmarks.push({
+                            id: bookmarkId,
+                            type: 'question',
+                            volumeId: '2',
+                            chapterId: '21',
+                            questionId: questionNum,
+                            title: title,
+                            timestamp: Date.now()
+                        });
+                        this.querySelector('svg').setAttribute('fill', 'currentColor');
+                        this.querySelector('span').textContent = 'Bookmarked';
+                    }
+                    
+                    localStorage.setItem('hcv-bookmarks', JSON.stringify(bookmarks));
+                });
+            });
+            
+            // Progress tracking
+            const markCompleteButton = document.getElementById('mark-complete');
+            
+            markCompleteButton.addEventListener('click', function() {
+                // Get current progress
+                const progress = JSON.parse(localStorage.getItem('hcv-progress') || '{}');
+                const chapterId = '2-21'; // Volume 2, Chapter 21
+                
+                // Initialize chapter progress if not exists
+                if (!progress[chapterId]) {
+                    progress[chapterId] = { theory: 0, practice: 0 };
+                }
+                
+                // Toggle completion status
+                if (progress[chapterId].practice < 1) {
+                    progress[chapterId].practice = 1;
+                    this.textContent = 'Completed';
+                    this.classList.add('completed');
+                    document.getElementById('practice-progress').style.width = '100%';
+                    document.getElementById('practice-progress-text').textContent = '100% complete';
+                } else {
+                    progress[chapterId].practice = 0;
+                    this.textContent = 'Mark Chapter as Complete';
+                    this.classList.remove('completed');
+                    document.getElementById('practice-progress').style.width = '0%';
+                    document.getElementById('practice-progress-text').textContent = '0% complete';
+                }
+                
+                // Save updated progress
+                localStorage.setItem('hcv-progress', JSON.stringify(progress));
+            });
+            
+            // Check initial completion status
+            const progress = JSON.parse(localStorage.getItem('hcv-progress') || '{}');
+            const chapterId = '2-21'; // Volume 2, Chapter 21
+            
+            if (progress[chapterId] && progress[chapterId].practice >= 1) {
+                markCompleteButton.textContent = 'Completed';
+                markCompleteButton.classList.add('completed');
+                document.getElementById('practice-progress').style.width = '100%';
+                document.getElementById('practice-progress-text').textContent = '100% complete';
+            }
+        });
+    </script>
+</body>
+</html>

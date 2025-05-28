@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HC Verma Physics - Practice Chapter 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">HC Verma - Concepts of Physics</div>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon moon-icon">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon sun-icon" style="display: none;">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="volume1.html">Volume 1</a></li>
+                    <li><a href="volume2.html">Volume 2</a></li>
+                    <li><a href="bookmarks.html">Bookmarks</a></li>
+                    <li><a href="progress.html">Progress</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="m9 18 6-6-6-6"/>
+            </svg>
+            <a href="volume1.html">Volume 1</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="m9 18 6-6-6-6"/>
+            </svg>
+            <a href="chapter1.html">Chapter 1</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="m9 18 6-6-6-6"/>
+            </svg>
+            <span>Practice</span>
+        </div>
+        
+        <div class="practice-container">
+            <section class="practice-header">
+                <h1>Chapter 1: Introduction to Physics</h1>
+                <p>Practice Questions</p>
+            </section>
+            
+            <section class="practice-controls">
+                <button id="prev-question" class="btn" disabled>Previous</button>
+                <span id="question-counter">Question 1 of 5</span>
+                <button id="next-question" class="btn">Next</button>
+            </section>
+            
+            <section class="practice-questions">
+                <div class="practice-question" data-question="1">
+                    <h2>Question 1</h2>
+                    <p>Which of the following is NOT a fundamental quantity in physics?</p>
+                    <ol type="a">
+                        <li>Length</li>
+                        <li>Time</li>
+                        <li>Mass</li>
+                        <li>Velocity</li>
+                    </ol>
+                    
+                    <button class="practice-answer-toggle">Show Answer</button>
+                    
+                    <div class="practice-answer" style="display: none;">
+                        <h3>Answer</h3>
+                        <p>d. Velocity</p>
+                        <p>Explanation: Velocity is a derived quantity, calculated from the fundamental quantities of length and time (velocity = displacement/time). The fundamental quantities in physics are length, time, mass, electric current, thermodynamic temperature, amount of substance, and luminous intensity.</p>
+                    </div>
+                    
+                    <button class="bookmark-question" data-question="1" data-title="Question 1: Fundamental Quantities">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                        </svg>
+                        <span>Bookmark</span>
+                    </button>
+                </div>
+                
+                <div class="practice-question" data-question="2" style="display: none;">
+                    <h2>Question 2</h2>
+                    <p>The SI unit of force is:</p>
+                    <ol type="a">
+                        <li>Kilogram</li>
+                        <li>Newton</li>
+                        <li>Joule</li>
+                        <li>Watt</li>
+                    </ol>
+                    
+                    <button class="practice-answer-toggle">Show Answer</button>
+                    
+                    <div class="practice-answer" style="display: none;">
+                        <h3>Answer</h3>
+                        <p>b. Newton</p>
+                        <p>Explanation: The newton (N) is the SI unit of force. It is defined as the force needed to accelerate a mass of one kilogram at a rate of one meter per second squared. 1 N = 1 kg·m/s².</p>
+                    </div>
+                    
+                    <button class="bookmark-question" data-question="2" data-title="Question 2: SI Unit of Force">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                        </svg>
+                        <span>Bookmark</span>
+                    </button>
+                </div>
+                
+                <div class="practice-question" data-question="3" style="display: none;">
+                    <h2>Question 3</h2>
+                    <p>Which of the following equations correctly represents Newton's Second Law of Motion?</p>
+                    <ol type="a">
+                        <li>F = ma</li>
+                        <li>F = m/a</li>
+                        <li>F = a/m</li>
+                        <li>F = m-a</li>
+                    </ol>
+                    
+                    <button class="practice-answer-toggle">Show Answer</button>
+                    
+                    <div class="practice-answer" style="display: none;">
+                        <h3>Answer</h3>
+                        <p>a. F = ma</p>
+                        <p>Explanation: Newton's Second Law states that the force acting on an object is equal to the mass of the object multiplied by its acceleration. This is represented by the equation F = ma, where F is force, m is mass, and a is acceleration.</p>
+                    </div>
+                    
+                    <button class="bookmark-question" data-question="3" data-title="Question 3: Newton's Second Law">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                        </svg>
+                        <span>Bookmark</span>
+                    </button>
+                </div>
+                
+                <div class="practice-question" data-question="4" style="display: none;">
+                    <h2>Question 4</h2>
+                    <p>The dimension of energy in terms of mass (M), length (L), and time (T) is:</p>
+                    <ol type="a">
+                        <li>MLT</li>
+                        <li>ML²T⁻²</li>
+                        <li>ML²T⁻¹</li>
+                        <li>M²LT⁻²</li>
+                    </ol>
+                    
+                    <button class="practice-answer-toggle">Show Answer</button>
+                    
+                    <div class="practice-answer" style="display: none;">
+                        <h3>Answer</h3>
+                        <p>b. ML²T⁻²</p>
+                        <p>Explanation: Energy can be expressed as force × distance. Force has dimensions MLT⁻², and distance has dimension L. Therefore, energy has dimensions MLT⁻² × L = ML²T⁻².</p>
+                    </div>
+                    
+                    <button class="bookmark-question" data-question="4" data-title="Question 4: Dimensions of Energy">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                        </svg>
+                        <span>Bookmark</span>
+                    </button>
+                </div>
+                
+                <div class="practice-question" data-question="5" style="display: none;">
+                    <h2>Question 5</h2>
+                    <p>Which of the following is an example of a scalar quantity?</p>
+                    <ol type="a">
+                        <li>Velocity</li>
+                        <li>Force</li>
+                        <li>Temperature</li>
+                        <li>Acceleration</li>
+                    </ol>
+                    
+                    <button class="practice-answer-toggle">Show Answer</button>
+                    
+                    <div class="practice-answer" style="display: none;">
+                        <h3>Answer</h3>
+                        <p>c. Temperature</p>
+                        <p>Explanation: Temperature is a scalar quantity because it has magnitude but no direction. Velocity, force, and acceleration are all vector quantities, meaning they have both magnitude and direction.</p>
+                    </div>
+                    
+                    <button class="bookmark-question" data-question="5" data-title="Question 5: Scalar Quantities">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                        </svg>
+                        <span>Bookmark</span>
+                    </button>
+                </div>
+            </section>
+            
+            <section class="practice-progress">
+                <h2>Your Progress</h2>
+                <div class="progress-bar">
+                    <div class="progress-value" id="practice-progress" style="width: 0%"></div>
+                </div>
+                <p id="practice-progress-text">0% complete</p>
+                <button id="mark-complete" class="btn" style="margin-top: 1rem;">Mark Chapter as Complete</button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>HC Verma - Concepts of Physics</p>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/js/theme.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Question navigation
+            const prevButton = document.getElementById('prev-question');
+            const nextButton = document.getElementById('next-question');
+            const questionCounter = document.getElementById('question-counter');
+            const questions = document.querySelectorAll('.practice-question');
+            
+            let currentQuestion = 1;
+            const totalQuestions = questions.length;
+            
+            function updateQuestionDisplay() {
+                // Hide all questions
+                questions.forEach(q => q.style.display = 'none');
+                
+                // Show current question
+                document.querySelector(`.practice-question[data-question="${currentQuestion}"]`).style.display = 'block';
+                
+                // Update counter
+                questionCounter.textContent = `Question ${currentQuestion} of ${totalQuestions}`;
+                
+                // Update button states
+                prevButton.disabled = currentQuestion === 1;
+                nextButton.disabled = currentQuestion === totalQuestions;
+            }
+            
+            prevButton.addEventListener('click', function() {
+                if (currentQuestion > 1) {
+                    currentQuestion--;
+                    updateQuestionDisplay();
+                }
+            });
+            
+            nextButton.addEventListener('click', function() {
+                if (currentQuestion < totalQuestions) {
+                    currentQuestion++;
+                    updateQuestionDisplay();
+                }
+            });
+            
+            // Show/hide answers
+            const answerToggleButtons = document.querySelectorAll('.practice-answer-toggle');
+            
+            answerToggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    
+                    if (answer.style.display === 'none') {
+                        answer.style.display = 'block';
+                        this.textContent = 'Hide Answer';
+                    } else {
+                        answer.style.display = 'none';
+                        this.textContent = 'Show Answer';
+                    }
+                });
+            });
+            
+            // Bookmark functionality
+            const bookmarkButtons = document.querySelectorAll('.bookmark-question');
+            
+            bookmarkButtons.forEach(button => {
+                const questionNum = button.dataset.question;
+                const title = button.dataset.title;
+                const bookmarkId = `question-1-1-${questionNum}`;
+                
+                // Check if already bookmarked
+                const bookmarks = JSON.parse(localStorage.getItem('hcv-bookmarks') || '[]');
+                const isBookmarked = bookmarks.some(bookmark => bookmark.id === bookmarkId);
+                
+                if (isBookmarked) {
+                    button.querySelector('svg').setAttribute('fill', 'currentColor');
+                    button.querySelector('span').textContent = 'Bookmarked';
+                }
+                
+                button.addEventListener('click', function() {
+                    const bookmarks = JSON.parse(localStorage.getItem('hcv-bookmarks') || '[]');
+                    const existingIndex = bookmarks.findIndex(bookmark => bookmark.id === bookmarkId);
+                    
+                    if (existingIndex >= 0) {
+                        // Remove bookmark
+                        bookmarks.splice(existingIndex, 1);
+                        this.querySelector('svg').setAttribute('fill', 'none');
+                        this.querySelector('span').textContent = 'Bookmark';
+                    } else {
+                        // Add bookmark
+                        bookmarks.push({
+                            id: bookmarkId,
+                            type: 'question',
+                            volumeId: '1',
+                            chapterId: '1',
+                            questionId: questionNum,
+                            title: title,
+                            timestamp: Date.now()
+                        });
+                        this.querySelector('svg').setAttribute('fill', 'currentColor');
+                        this.querySelector('span').textContent = 'Bookmarked';
+                    }
+                    
+                    localStorage.setItem('hcv-bookmarks', JSON.stringify(bookmarks));
+                });
+            });
+            
+            // Progress tracking
+            const markCompleteButton = document.getElementById('mark-complete');
+            
+            markCompleteButton.addEventListener('click', function() {
+                // Get current progress
+                const progress = JSON.parse(localStorage.getItem('hcv-progress') || '{}');
+                const chapterId = '1-1'; // Volume 1, Chapter 1
+                
+                // Initialize chapter progress if not exists
+                if (!progress[chapterId]) {
+                    progress[chapterId] = { theory: 0, practice: 0 };
+                }
+                
+                // Toggle completion status
+                if (progress[chapterId].practice < 1) {
+                    progress[chapterId].practice = 1;
+                    this.textContent = 'Completed';
+                    this.classList.add('completed');
+                    document.getElementById('practice-progress').style.width = '100%';
+                    document.getElementById('practice-progress-text').textContent = '100% complete';
+                } else {
+                    progress[chapterId].practice = 0;
+                    this.textContent = 'Mark Chapter as Complete';
+                    this.classList.remove('completed');
+                    document.getElementById('practice-progress').style.width = '0%';
+                    document.getElementById('practice-progress-text').textContent = '0% complete';
+                }
+                
+                // Save updated progress
+                localStorage.setItem('hcv-progress', JSON.stringify(progress));
+            });
+            
+            // Check initial completion status
+            const progress = JSON.parse(localStorage.getItem('hcv-progress') || '{}');
+            const chapterId = '1-1'; // Volume 1, Chapter 1
+            
+            if (progress[chapterId] && progress[chapterId].practice >= 1) {
+                markCompleteButton.textContent = 'Completed';
+                markCompleteButton.classList.add('completed');
+                document.getElementById('practice-progress').style.width = '100%';
+                document.getElementById('practice-progress-text').textContent = '100% complete';
+            }
+        });
+    </script>
+</body>
+</html>

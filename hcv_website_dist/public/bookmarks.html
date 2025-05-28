@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HC Verma Physics - Bookmarks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">HC Verma - Concepts of Physics</div>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon moon-icon">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon sun-icon" style="display: none;">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="volume1.html">Volume 1</a></li>
+                    <li><a href="volume2.html">Volume 2</a></li>
+                    <li><a href="bookmarks.html">Bookmarks</a></li>
+                    <li><a href="progress.html">Progress</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="m9 18 6-6-6-6"/>
+            </svg>
+            <span>Bookmarks</span>
+        </div>
+        
+        <section class="bookmarks-header">
+            <h1>Your Bookmarks</h1>
+            <p>Access your saved content</p>
+        </section>
+        
+        <section id="bookmarks-container">
+            <div class="bookmarks-empty" id="empty-bookmarks">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bookmarks-icon">
+                    <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                </svg>
+                <p>No bookmarks yet. Start reading and bookmark your favorite sections.</p>
+                <a href="index.html" class="btn" style="margin-top: 1rem;">Explore Content</a>
+            </div>
+            
+            <div class="bookmarks-list" id="bookmarks-list" style="display: none;">
+                <!-- Bookmarks will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>HC Verma - Concepts of Physics</p>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/js/theme.js"></script>
+    <script>
+        // Load and display bookmarks
+        document.addEventListener('DOMContentLoaded', function() {
+            const bookmarksContainer = document.getElementById('bookmarks-container');
+            const emptyBookmarks = document.getElementById('empty-bookmarks');
+            const bookmarksList = document.getElementById('bookmarks-list');
+            
+            // Get bookmarks from localStorage
+            const bookmarks = JSON.parse(localStorage.getItem('hcv-bookmarks') || '[]');
+            
+            if (bookmarks.length > 0) {
+                // Hide empty state and show bookmarks list
+                emptyBookmarks.style.display = 'none';
+                bookmarksList.style.display = 'block';
+                
+                // Sort bookmarks by timestamp (newest first)
+                bookmarks.sort((a, b) => b.timestamp - a.timestamp);
+                
+                // Create bookmark items
+                bookmarks.forEach(bookmark => {
+                    const bookmarkItem = document.createElement('div');
+                    bookmarkItem.className = 'bookmark-item';
+                    
+                    // Format date
+                    const date = new Date(bookmark.timestamp);
+                    const formattedDate = date.toLocaleDateString('en-US', { 
+                        year: 'numeric', 
+                        month: 'short', 
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit'
+                    });
+                    
+                    // Get bookmark URL
+                    let bookmarkUrl = '#';
+                    if (bookmark.type === 'chapter') {
+                        bookmarkUrl = `chapter${bookmark.volumeId}${bookmark.chapterId}.html`;
+                    } else if (bookmark.type === 'theory') {
+                        bookmarkUrl = `theory${bookmark.volumeId}${bookmark.chapterId}.html`;
+                    } else {
+                        bookmarkUrl = `practice${bookmark.volumeId}${bookmark.chapterId}.html`;
+                    }
+                    
+                    bookmarkItem.innerHTML = `
+                        <div class="bookmark-content">
+                            <h3><a href="${bookmarkUrl}">${bookmark.title}</a></h3>
+                            <div class="bookmark-meta">
+                                <span class="capitalize">${bookmark.type}</span>
+                                <span>•</span>
+                                <span>Volume ${bookmark.volumeId}</span>
+                                <span>•</span>
+                                <span>Chapter ${bookmark.chapterId}</span>
+                                ${bookmark.sectionId ? `
+                                    <span>•</span>
+                                    <span>Section ${bookmark.sectionId}</span>
+                                ` : ''}
+                                ${bookmark.questionId ? `
+                                    <span>•</span>
+                                    <span>Question ${bookmark.questionId}</span>
+                                ` : ''}
+                            </div>
+                            <div class="bookmark-date">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>${formattedDate}</span>
+                            </div>
+                        </div>
+                        <div class="bookmark-actions">
+                            <button class="remove-bookmark" data-id="${bookmark.id}" aria-label="Remove bookmark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                                    <path d="M3 6h18"></path>
+                                    <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                                    <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    `;
+                    
+                    bookmarksList.appendChild(bookmarkItem);
+                });
+                
+                // Add event listeners for remove buttons
+                document.querySelectorAll('.remove-bookmark').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const bookmarkId = this.getAttribute('data-id');
+                        
+                        // Remove from localStorage
+                        const updatedBookmarks = bookmarks.filter(bookmark => bookmark.id !== bookmarkId);
+                        localStorage.setItem('hcv-bookmarks', JSON.stringify(updatedBookmarks));
+                        
+                        // Remove from DOM
+                        this.closest('.bookmark-item').remove();
+                        
+                        // Show empty state if no bookmarks left
+                        if (updatedBookmarks.length === 0) {
+                            emptyBookmarks.style.display = 'block';
+                            bookmarksList.style.display = 'none';
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

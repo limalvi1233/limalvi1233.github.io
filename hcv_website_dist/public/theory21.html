@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HC Verma Physics - Theory Chapter 21</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">HC Verma - Concepts of Physics</div>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon moon-icon">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon sun-icon" style="display: none;">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="volume1.html">Volume 1</a></li>
+                    <li><a href="volume2.html">Volume 2</a></li>
+                    <li><a href="bookmarks.html">Bookmarks</a></li>
+                    <li><a href="progress.html">Progress</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="m9 18 6-6-6-6"/>
+            </svg>
+            <a href="volume2.html">Volume 2</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="m9 18 6-6-6-6"/>
+            </svg>
+            <a href="chapter21.html">Chapter 21</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="m9 18 6-6-6-6"/>
+            </svg>
+            <span>Theory</span>
+        </div>
+        
+        <div class="theory-container">
+            <aside class="theory-nav">
+                <h3>Sections</h3>
+                <div class="theory-nav-items">
+                    <a href="#introduction" class="theory-nav-item active">21.1 Introduction to Heat and Temperature</a>
+                    <a href="#temperature-scales" class="theory-nav-item">21.2 Temperature Scales</a>
+                    <a href="#thermal-expansion" class="theory-nav-item">21.3 Thermal Expansion</a>
+                    <a href="#heat-capacity" class="theory-nav-item">21.4 Heat Capacity</a>
+                    <a href="#phase-changes" class="theory-nav-item">21.5 Phase Changes</a>
+                    <a href="#summary" class="theory-nav-item">21.6 Summary</a>
+                </div>
+                <button id="mark-complete" class="btn" style="margin-top: 2rem; width: 100%;">Mark as Complete</button>
+            </aside>
+            
+            <article class="theory-content">
+                <h1>Chapter 21: Heat and Temperature</h1>
+                
+                <section id="introduction">
+                    <h2>21.1 Introduction to Heat and Temperature</h2>
+                    <p>Heat and temperature are concepts that are often confused with each other, but they represent different physical quantities. Temperature is a measure of the average kinetic energy of the particles in a substance, while heat is the transfer of energy between objects due to a temperature difference.</p>
+                    
+                    <p>When two objects at different temperatures come into contact, energy flows from the hotter object to the cooler one until they reach thermal equilibrium. This energy transfer is what we call heat. The direction of heat flow is always from higher temperature to lower temperature, in accordance with the Second Law of Thermodynamics.</p>
+                    
+                    <button class="bookmark-section" data-section="21.1" data-title="21.1 Introduction to Heat and Temperature">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                        </svg>
+                        <span>Bookmark</span>
+                    </button>
+                </section>
+                
+                <section id="temperature-scales">
+                    <h2>21.2 Temperature Scales</h2>
+                    <p>Several temperature scales are in use today. The three most common are:</p>
+                    
+                    <p><strong>Celsius Scale (°C):</strong> In this scale, the freezing point of water is defined as 0°C and the boiling point as 100°C at standard atmospheric pressure.</p>
+                    
+                    <p><strong>Fahrenheit Scale (°F):</strong> In this scale, the freezing point of water is at 32°F and the boiling point at 212°F at standard atmospheric pressure.</p>
+                    
+                    <p><strong>Kelvin Scale (K):</strong> This is the SI unit of temperature. It is an absolute temperature scale, meaning 0 K is absolute zero, the theoretical temperature at which all molecular motion ceases. The size of one kelvin is the same as one degree Celsius, so water freezes at 273.15 K and boils at 373.15 K at standard atmospheric pressure.</p>
+                    
+                    <div class="equation">
+                        K = °C + 273.15
+                    </div>
+                    
+                    <div class="equation">
+                        °F = (°C × 9/5) + 32
+                    </div>
+                    
+                    <button class="bookmark-section" data-section="21.2" data-title="21.2 Temperature Scales">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                        </svg>
+                        <span>Bookmark</span>
+                    </button>
+                </section>
+                
+                <section id="thermal-expansion">
+                    <h2>21.3 Thermal Expansion</h2>
+                    <p>Most materials expand when heated and contract when cooled. This phenomenon is known as thermal expansion. The amount of expansion depends on the material's properties and the temperature change.</p>
+                    
+                    <p>For linear expansion, the change in length (ΔL) is proportional to the original length (L₀) and the change in temperature (ΔT):</p>
+                    
+                    <div class="equation">
+                        ΔL = α × L₀ × ΔT
+                    </div>
+                    
+                    <p>where α is the coefficient of linear expansion, which is a material-specific constant.</p>
+                    
+                    <p>Similarly, for volume expansion, the change in volume (ΔV) is proportional to the original volume (V₀) and the change in temperature (ΔT):</p>
+                    
+                    <div class="equation">
+                        ΔV = β × V₀ × ΔT
+                    </div>
+                    
+                    <p>where β is the coefficient of volume expansion, which is approximately equal to 3α for most solids.</p>
+                    
+                    <button class="bookmark-section" data-section="21.3" data-title="21.3 Thermal Expansion">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                        </svg>
+                        <span>Bookmark</span>
+                    </button>
+                </section>
+                
+                <section id="heat-capacity">
+                    <h2>21.4 Heat Capacity</h2>
+                    <p>Heat capacity is the amount of heat energy required to raise the temperature of an object by one degree. It depends on the mass and composition of the object.</p>
+                    
+                    <p>The specific heat capacity (c) of a material is the amount of heat required to raise the temperature of one unit of mass of the material by one degree. The SI unit of specific heat capacity is J/(kg·K).</p>
+                    
+                    <p>The heat energy (Q) required to change the temperature of a mass (m) by ΔT is given by:</p>
+                    
+                    <div class="equation">
+                        Q = m × c × ΔT
+                    </div>
+                    
+                    <p>Water has a relatively high specific heat capacity of 4,186 J/(kg·K), which means it can absorb or release a large amount of heat with only a small change in temperature. This property makes water an excellent coolant and is also why bodies of water moderate the climate of nearby land.</p>
+                    
+                    <button class="bookmark-section" data-section="21.4" data-title="21.4 Heat Capacity">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                        </svg>
+                        <span>Bookmark</span>
+                    </button>
+                </section>
+                
+                <section id="phase-changes">
+                    <h2>21.5 Phase Changes</h2>
+                    <p>Matter can exist in different phases: solid, liquid, gas, and plasma. Transitions between these phases are called phase changes. Common phase changes include:</p>
+                    
+                    <p><strong>Melting:</strong> Solid to liquid (requires heat)</p>
+                    <p><strong>Freezing:</strong> Liquid to solid (releases heat)</p>
+                    <p><strong>Vaporization:</strong> Liquid to gas (requires heat)</p>
+                    <p><strong>Condensation:</strong> Gas to liquid (releases heat)</p>
+                    <p><strong>Sublimation:</strong> Solid to gas (requires heat)</p>
+                    <p><strong>Deposition:</strong> Gas to solid (releases heat)</p>
+                    
+                    <p>During a phase change, the temperature remains constant even though heat is being added or removed. The heat energy is used to break or form bonds between molecules rather than increase their kinetic energy.</p>
+                    
+                    <p>The heat required to change the phase of a substance is called latent heat. The latent heat of fusion (L<sub>f</sub>) is the heat required to melt a unit mass of a solid at its melting point, and the latent heat of vaporization (L<sub>v</sub>) is the heat required to vaporize a unit mass of a liquid at its boiling point.</p>
+                    
+                    <div class="equation">
+                        Q = m × L
+                    </div>
+                    
+                    <p>where Q is the heat energy, m is the mass, and L is the latent heat (either L<sub>f</sub> or L<sub>v</sub>).</p>
+                    
+                    <button class="bookmark-section" data-section="21.5" data-title="21.5 Phase Changes">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                        </svg>
+                        <span>Bookmark</span>
+                    </button>
+                </section>
+                
+                <section id="summary">
+                    <h2>21.6 Summary</h2>
+                    <p>In this chapter, we have explored the fundamental concepts of heat and temperature. We have learned that temperature is a measure of the average kinetic energy of particles, while heat is the transfer of energy due to a temperature difference.</p>
+                    
+                    <p>We have discussed different temperature scales (Celsius, Fahrenheit, and Kelvin) and how to convert between them. We have also examined thermal expansion, which is the tendency of materials to expand when heated and contract when cooled.</p>
+                    
+                    <p>Heat capacity is the amount of heat required to raise the temperature of an object, and specific heat capacity is this quantity per unit mass. Finally, we have explored phase changes and the concept of latent heat, which is the heat required to change the phase of a substance without changing its temperature.</p>
+                    
+                    <p>Understanding these concepts is crucial for studying thermodynamics and for many practical applications in engineering and everyday life.</p>
+                    
+                    <button class="bookmark-section" data-section="21.6" data-title="21.6 Summary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                        </svg>
+                        <span>Bookmark</span>
+                    </button>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>HC Verma - Concepts of Physics</p>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/js/theme.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Section navigation
+            const sectionLinks = document.querySelectorAll('.theory-nav-item');
+            const sections = document.querySelectorAll('.theory-content section');
+            
+            sectionLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links
+                    sectionLinks.forEach(l => l.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // Scroll to section
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+            
+            // Bookmark functionality
+            const bookmarkButtons = document.querySelectorAll('.bookmark-section');
+            
+            bookmarkButtons.forEach(button => {
+                const section = button.dataset.section;
+                const title = button.dataset.title;
+                const bookmarkId = `theory-2-21-${section}`;
+                
+                // Check if already bookmarked
+                const bookmarks = JSON.parse(localStorage.getItem('hcv-bookmarks') || '[]');
+                const isBookmarked = bookmarks.some(bookmark => bookmark.id === bookmarkId);
+                
+                if (isBookmarked) {
+                    button.querySelector('svg').setAttribute('fill', 'currentColor');
+                    button.querySelector('span').textContent = 'Bookmarked';
+                }
+                
+                button.addEventListener('click', function() {
+                    const bookmarks = JSON.parse(localStorage.getItem('hcv-bookmarks') || '[]');
+                    const existingIndex = bookmarks.findIndex(bookmark => bookmark.id === bookmarkId);
+                    
+                    if (existingIndex >= 0) {
+                        // Remove bookmark
+                        bookmarks.splice(existingIndex, 1);
+                        this.querySelector('svg').setAttribute('fill', 'none');
+                        this.querySelector('span').textContent = 'Bookmark';
+                    } else {
+                        // Add bookmark
+                        bookmarks.push({
+                            id: bookmarkId,
+                            type: 'theory',
+                            volumeId: '2',
+                            chapterId: '21',
+                            sectionId: section,
+                            title: title,
+                            timestamp: Date.now()
+                        });
+                        this.querySelector('svg').setAttribute('fill', 'currentColor');
+                        this.querySelector('span').textContent = 'Bookmarked';
+                    }
+                    
+                    localStorage.setItem('hcv-bookmarks', JSON.stringify(bookmarks));
+                });
+            });
+            
+            // Progress tracking
+            const markCompleteButton = document.getElementById('mark-complete');
+            
+            markCompleteButton.addEventListener('click', function() {
+                // Get current progress
+                const progress = JSON.parse(localStorage.getItem('hcv-progress') || '{}');
+                const chapterId = '2-21'; // Volume 2, Chapter 21
+                
+                // Initialize chapter progress if not exists
+                if (!progress[chapterId]) {
+                    progress[chapterId] = { theory: 0, practice: 0 };
+                }
+                
+                // Toggle completion status
+                if (progress[chapterId].theory < 1) {
+                    progress[chapterId].theory = 1;
+                    this.textContent = 'Completed';
+                    this.classList.add('completed');
+                } else {
+                    progress[chapterId].theory = 0;
+                    this.textContent = 'Mark as Complete';
+                    this.classList.remove('completed');
+                }
+                
+                // Save updated progress
+                localStorage.setItem('hcv-progress', JSON.stringify(progress));
+            });
+            
+            // Check initial completion status
+            const progress = JSON.parse(localStorage.getItem('hcv-progress') || '{}');
+            const chapterId = '2-21'; // Volume 2, Chapter 21
+            
+            if (progress[chapterId] && progress[chapterId].theory >= 1) {
+                markCompleteButton.textContent = 'Completed';
+                markCompleteButton.classList.add('completed');
+            }
+        });
+    </script>
+</body>
+</html>
